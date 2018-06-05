@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/daftar_icon"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/daftar_judul"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/daftar_icon"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/daftar_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/daftar_judul"
+        android:layout_marginLeft="16dp"
+        android:textColor="#333333"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Ini adalah contoh deskripsi"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="22sp"/>
+
+</LinearLayout>
